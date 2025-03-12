@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Places</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            color: #0d0c0c;
+            background-color: #a9d3f8;
+        
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #76bbf7;
+}
+        
+        header h1 {
+            font-size: 20px;
+            color: #0c0c0c;
+             margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 9px;
+        }
+        #hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            background: url('hero-image.jpg') center/cover no-repeat;
+            text-align: center;
+            padding: 20px;
+        }
+        #hero h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        #hero p {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        #hero button {
+            margin: 10px;
+            padding: 10px 18px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #44b0f3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .info-box {
+            background-color: #d6e9fa;
+            color: #0d0c0c;
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 700px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .experience-form {
+            max-width: 350px;
+            margin: 80px auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .experience-form h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .experience-form label {
+            font-weight: bold;
+            font-size: 13px;
+           
+        }
+        .experience-form textarea, .experience-form input {
+            width: calc(100%-12px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .experience-form button {
+            width: 100%;
+            padding: 6px;
+            background-color: #44b0f3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        footer
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #76bbf7;
+            text-align: c;
+            }
+            footer p {
+            font-size: 10px;
+            color: #0c0c0c;
+             margin: auto;
+             text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Safe Places</h1>
+        <nav>
+            <ul>
+                <li><a href="page.html">Home</a></li>
+                <li><a href="exploremap.html">Explore Map</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+   
+    <section class="experience-form">
+        <h3>Write About Your Experience</h3>
+        <form>
+            <label for="location">Location Name:</label>
+            <input type="text" id="location" name="location" placeholder="Enter location name" required>
+            
+            <label for="experience">Your Experience:</label>
+            <textarea id="experience" name="experience" rows="5" placeholder="Describe your experience..." required></textarea>
+            
+            <label for="rating">Safety Rating (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            
+            <button type="submit">Submit Experience</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Safe Places | All Rights Reserved</p>
+    </footer>
+    <script src="page.js"></script>
+</body>
+</html>
